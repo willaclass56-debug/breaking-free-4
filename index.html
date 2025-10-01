@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Free - Stop Punching Yourself In The Face | Shawn Straker</title>
+    <meta name="description" content="The brutal truth about why smart people sabotage their success. Get the step-by-step battle plan to break free from self-sabotage once and for all. By Shawn Straker - $40">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://willaclass56-debug.github.io/breaking-free/">
+    <meta property="og:title" content="Breaking Free - Stop Punching Yourself In The Face">
+    <meta property="og:description" content="The brutal truth about why smart people sabotage their success. $40">
+    <meta property="og:image" content="https://page.gensparksite.com/v1/base64_upload/1fdec8cc16e191b6a421492e8a82b47c">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://willaclass56-debug.github.io/breaking-free/">
+    <meta property="twitter:title" content="Breaking Free - Stop Punching Yourself In The Face">
+    <meta property="twitter:description" content="The brutal truth about why smart people sabotage their success. $40">
+    <meta property="twitter:image" content="https://page.gensparksite.com/v1/base64_upload/1fdec8cc16e191b6a421492e8a82b47c">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset & Base Styles */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* CSS Custom Properties */
+        :root {
+            /* Colors - Pure Black Theme */
+            --color-black: #000000;
+            --color-black-light: #111111;
+            --color-black-lighter: #1a1a1a;
+            --color-black-accent: #222222;
+            
+            --color-white: #ffffff;
+            --color-white-soft: #f8f9fa;
+            --color-gray-light: #cccccc;
+            --color-gray-medium: #888888;
+            --color-gray-dark: #333333;
+            
+            --color-red: #ff0000;
+            --color-red-light: #ff3333;
+            --color-red-dark: #cc0000;
+            --color-red-glow: rgba(255, 0, 0, 0.3);
+            
+            --color-gold: #ffd700;
+            --color-gold-light: #ffed4e;
+            --color-gold-dark: #e6c200;
+            --color-gold-glow: rgba(255, 215, 0, 0.3);
+            
+            /* Gradients */
+            --gradient-red: linear-gradient(135deg, var(--color-red), var(--color-red-light));
+            --gradient-gold: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            --gradient-progress: linear-gradient(90deg, var(--color-red), var(--color-gold));
+            --gradient-hero: radial-gradient(ellipse at center, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+            --gradient-section: radial-gradient(ellipse at top, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-display: 'Oswald', 'Arial Black', sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-xxl: 4rem;
+            
+            /* Container & Layout */
+            --container-width: 1200px;
+            --border-radius: 8px;
+            --border-radius-lg: 16px;
+            
+            /* Animations */
+            --transition-fast: 0.2s ease;
+            --transition-medium: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            
+            /* Shadows */
+            --shadow-glow-red: 0 0 30px var(--color-red-glow);
+            --shadow-glow-gold: 0 0 30px var(--color-gold-glow);
+            --shadow-text-red: 0 0 20px var(--color-red-glow);
+            --shadow-text-gold: 0 0 20px var(--color-gold-glow);
+        }
+
+        /* Base Typography */
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--color-white);
+            background: var(--color-black);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--color-black-light);
+            z-index: 9999;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--gradient-progress);
+            width: 0%;
+            transition: width var(--transition-medium);
+            box-shadow: var(--shadow-glow-red);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-black-accent);
+            z-index: 1000;
+            transition: all var(--transition-medium);
+            padding: var(--spacing-sm) 0;
+        }
+
+        .navbar.scrolled {
+            background: rgba(0, 0, 0, 0.98);
+            box-shadow: var(--shadow-glow-red);
+        }
+
+        .nav-container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 var(--spacing-md);
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-red);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .nav-link {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--color-red);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .nav-cta {
+            background: var(--gradient-red);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            color: var(--color-white);
+            font-weight: 600;
+            transition: all var(--transition-fast);
+            border: 2px solid var(--color-red);
+            box-shadow: var(--shadow-glow-red);
+        }
+
+        .nav-cta:hover {
+            background: var(--color-red-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px var(--color-red-glow);
+        }
+
+        /* Mobile Navigation */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color var(--transition-fast);
+        }
+
+        .nav-toggle:hover {
+            color: var(--color-red);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            padding: var(--spacing-xxl) var(--spacing-md);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 0, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(255, 0, 0, 0.05) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--color-red);
+            color: var(--color-white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--shadow-glow-red);
+            animation: pulse 2s infinite;
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .hero-title .highlight {
+            color: var(--color-red);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-gray-light);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            text-shadow: var(--shadow-text-gold);
+            margin: var(--spacing-lg) 0;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: var(--gradient-red);
+            color: var(--color-white);
+            padding: var(--spacing-md) var(--spacing-xl);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: var(--spacing-lg);
+            transition: all var(--transition-fast);
+            border: 2px solid var(--color-red);
+            box-shadow: var(--shadow-glow-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-cta:hover {
+            background: var(--color-red-dark);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 50px var(--color-red-glow);
+        }
+
+        .hero-guarantee {
+            margin-top: var(--spacing-lg);
+            font-size: 0.875rem;
+            color: var(--color-gray-medium);
+        }
+
+        .guarantee-icon {
+            color: var(--color-gold);
+            margin-right: var(--spacing-xs);
+        }
+
+        /* Section Base Styles */
+        .section {
+            padding: var(--spacing-xxl) 0;
+            position: relative;
+        }
+
+        .section-dark {
+            background: var(--color-black-light);
+        }
+
+        .section-accent {
+            background: var(--gradient-section);
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-gray-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Problem Section */
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .problem-card {
+            background: var(--color-black-accent);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-dark);
+            transition: all var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-red);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow-red);
+            border-color: var(--color-red);
+        }
+
+        .problem-icon {
+            font-size: 3rem;
+            color: var(--color-red);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .problem-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+        }
+
+        .problem-description {
+            color: var(--color-gray-light);
+            line-height: 1.7;
+        }
+
+        /* Solution Section */
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+            align-items: center;
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .solution-text {
+            order: 1;
+        }
+
+        .solution-image {
+            order: 2;
+            text-align: center;
+        }
+
+        .book-cover {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                var(--shadow-glow-red);
+            transition: all var(--transition-slow);
+        }
+
+        .book-cover:hover {
+            transform: scale(1.05) rotateY(10deg);
+            box-shadow: 
+                0 35px 70px rgba(0, 0, 0, 0.7),
+                0 0 60px var(--color-red-glow);
+        }
+
+        .solution-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .solution-description {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-gray-light);
+        }
+
+        .solution-features {
+            list-style: none;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .solution-features li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+            font-size: 1.125rem;
+            color: var(--color-gray-light);
+        }
+
+        .solution-features .fas {
+            color: var(--color-gold);
+            margin-right: var(--spacing-md);
+            margin-top: 4px;
+            text-shadow: var(--shadow-text-gold);
+        }
+
+        /* Author Section */
+        .author-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--spacing-xxl);
+            align-items: center;
+        }
+
+        .author-image {
+            text-align: center;
+        }
+
+        .author-photo {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid var(--color-gold);
+            box-shadow: var(--shadow-glow-gold);
+            transition: all var(--transition-slow);
+        }
+
+        .author-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 60px var(--color-gold-glow);
+        }
+
+        .author-text h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-gold);
+            text-shadow: var(--shadow-text-gold);
+        }
+
+        .author-text p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-gray-light);
+        }
+
+        /* Email Capture Section */
+        .email-capture {
+            background: var(--color-black-accent);
+            border: 2px solid var(--color-red);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xxl);
+            margin: var(--spacing-xxl) 0;
+            text-align: center;
+            box-shadow: var(--shadow-glow-red);
+        }
+
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: 2px solid var(--color-gray-dark);
+            border-radius: var(--border-radius);
+            background: var(--color-black-light);
+            color: var(--color-white);
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-red);
+            box-shadow: var(--shadow-glow-red);
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--gradient-gold);
+            color: var(--color-black);
+            padding: var(--spacing-md);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-submit:hover {
+            background: var(--color-gold-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow-gold);
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .testimonial {
+            background: var(--color-black-accent);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-gray-dark);
+            position: relative;
+            transition: all var(--transition-medium);
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow-gold);
+            border-color: var(--color-gold);
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--color-gold);
+            font-family: serif;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+            color: var(--color-gray-light);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-gold);
+        }
+
+        .testimonial-role {
+            font-size: 0.875rem;
+            color: var(--color-gray-medium);
+        }
+
+        /* Purchase Section */
+        .purchase {
+            background: var(--gradient-hero);
+            text-align: center;
+            position: relative;
+        }
+
+        .purchase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 30% 40%, rgba(255, 0, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(255, 215, 0, 0.15) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .purchase-card {
+            background: var(--color-black-accent);
+            border: 3px solid var(--color-red);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xxl);
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-glow-red);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .purchase-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, rgba(255, 0, 0, 0.1), transparent 30%);
+            animation: rotate 4s linear infinite;
+        }
+
+        .purchase-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .purchase-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+            text-shadow: var(--shadow-text-red);
+        }
+
+        .purchase-price {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--color-gold);
+            text-shadow: var(--shadow-text-gold);
+            margin: var(--spacing-lg) 0;
+            animation: pulse 2s infinite;
+        }
+
+        .purchase-features {
+            list-style: none;
+            margin: var(--spacing-lg) 0;
+            text-align: left;
+        }
+
+        .purchase-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.125rem;
+            color: var(--color-gray-light);
+        }
+
+        .purchase-features .fas {
+            color: var(--color-gold);
+            margin-right: var(--spacing-md);
+            text-shadow: var(--shadow-text-gold);
+        }
+
+        .purchase-cta {
+            display: inline-block;
+            background: var(--gradient-red);
+            color: var(--color-white);
+            padding: var(--spacing-md) var(--spacing-xl);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: var(--spacing-lg);
+            transition: all var(--transition-fast);
+            border: 3px solid var(--color-red);
+            box-shadow: var(--shadow-glow-red);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .purchase-cta:hover {
+            background: var(--color-red-dark);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 60px var(--color-red-glow);
+        }
+
+        .purchase-guarantee {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid var(--color-gold);
+            border-radius: var(--border-radius);
+        }
+
+        .purchase-guarantee h4 {
+            color: var(--color-gold);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-black-light);
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+            text-align: center;
+            border-top: 1px solid var(--color-black-accent);
+        }
+
+        .footer-content {
+            color: var(--color-gray-medium);
+            font-size: 0.875rem;
+        }
+
+        .footer-content a {
+            color: var(--color-red);
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            color: var(--color-red-light);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px var(--color-gold-glow);
+            }
+            to {
+                text-shadow: 0 0 30px var(--color-gold-glow), 0 0 40px var(--color-gold-glow);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-price {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .solution-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .solution-text {
+                order: 2;
+            }
+
+            .solution-image {
+                order: 1;
+            }
+
+            .author-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+                text-align: center;
+            }
+
+            .purchase-price {
+                font-size: 3rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --spacing-xxl: 2rem;
+            }
+
+            .hero {
+                padding: var(--spacing-lg) var(--spacing-sm);
+            }
+
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+
+            .purchase-card {
+                padding: var(--spacing-lg);
+            }
+
+            .email-capture {
+                padding: var(--spacing-lg);
+            }
+        }
+
+        /* Smooth scrolling enhancement */
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-container {
+                animation: fadeInUp 1s ease-out;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">BREAKING FREE</div>
+            <ul class="nav-menu">
+                <li><a href="#problem" class="nav-link">The Problem</a></li>
+                <li><a href="#solution" class="nav-link">The Solution</a></li>
+                <li><a href="#author" class="nav-link">About Author</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="https://ko-fi.com/s/901892076f" class="nav-cta" target="_blank">Get The Book - $40</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fas fa-fire"></i> Life-Changing Truth
+            </div>
+            <h1 class="hero-title">
+                Stop <span class="highlight">Punching Yourself</span><br>
+                In The Face
+            </h1>
+            <p class="hero-subtitle">
+                The brutal truth about why smart people sabotage their success and the step-by-step battle plan to break free once and for all.
+            </p>
+            <div class="hero-price">$40</div>
+            <a href="https://ko-fi.com/s/901892076f" class="hero-cta" target="_blank">
+                <i class="fas fa-shopping-cart"></i> Get Breaking Free Now
+            </a>
+            <div class="hero-guarantee">
+                <i class="fas fa-shield-alt guarantee-icon"></i>
+                30-Day Money-Back Guarantee
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section section-dark" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You're Not Broken.<br>You're <span style="color: var(--color-red);">Programmed</span> Wrong.</h2>
+                <p class="section-subtitle">
+                    The invisible force that's been sabotaging your success isn't what you think it is.
+                </p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="fas fa-brain problem-icon"></i>
+                    <h3 class="problem-title">The Smart Person's Curse</h3>
+                    <p class="problem-description">
+                        You analyze everything to death, second-guess your decisions, and talk yourself out of opportunities before you even try. Your intelligence has become your prison.
+                    </p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-cycle problem-icon"></i>
+                    <h3 class="problem-title">The Self-Sabotage Loop</h3>
+                    <p class="problem-description">
+                        Just when things start going well, you find a way to mess it up. It's like there's another person inside your head working against everything you want to achieve.
+                    </p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-mask problem-icon"></i>
+                    <h3 class="problem-title">The Imposter Syndrome</h3>
+                    <p class="problem-description">
+                        You feel like a fraud waiting to be exposed. Despite your achievements, you can't shake the feeling that you don't deserve success and someone will figure you out.
+                    </p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://ko-fi.com/s/901892076f" class="hero-cta" target="_blank">
+                    <i class="fas fa-arrow-right"></i> Break Free From This Cycle
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section section-accent" id="solution">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2 class="solution-title">The Battle Plan That Actually Works</h2>
+                    <p class="solution-description">
+                        "Breaking Free" isn't another feel-good self-help book. It's a no-BS guide that exposes the real reasons you sabotage yourself and gives you the exact tools to stop it.
+                    </p>
+                    <ul class="solution-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            The 3 hidden triggers that activate self-sabotage (and how to disarm them)
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            The "Inner Critic Shutdown" technique that silences negative self-talk
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            A 30-day action plan to rewire your success mindset
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Real-world case studies from people who broke through their barriers
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            The "Momentum Protocol" - how to build unstoppable forward progress
+                        </li>
+                    </ul>
+                    <a href="https://ko-fi.com/s/901892076f" class="hero-cta" target="_blank">
+                        <i class="fas fa-download"></i> Download Now - $40
+                    </a>
+                </div>
+                <div class="solution-image">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/1fdec8cc16e191b6a421492e8a82b47c" alt="Breaking Free Book Cover" class="book-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="section">
+        <div class="container">
+            <div class="email-capture">
+                <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem; color: var(--color-gold);">
+                    Get FREE Chapter: "The Self-Sabotage Decoder"
+                </h3>
+                <p style="margin-bottom: 2rem; color: var(--color-gray-light);">
+                    Discover the 5 most common self-sabotage patterns and how to spot them before they derail your progress.
+                </p>
+                <form class="email-form" id="emailForm">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email address" required id="emailInput">
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-gift"></i> Send Me The Free Chapter
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section class="section section-dark" id="author">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet <span style="color: var(--color-gold);">Shawn Straker</span></h2>
+                <p class="section-subtitle">
+                    The guy who turned his biggest failures into his greatest strengths
+                </p>
+            </div>
+            <div class="author-content">
+                <div class="author-image">
+                    <img src="https://page.gensparksite.com/v1/base64_upload/2862969c14988372a89acea52aced3bf" alt="Shawn Straker - Author" class="author-photo">
+                </div>
+                <div class="author-text">
+                    <h3>From Self-Sabotage to Success</h3>
+                    <p>
+                        Shawn Straker knows self-sabotage intimately because he lived it. After losing three businesses, destroying relationships, and hitting rock bottom despite having "all the right answers," he realized the problem wasn't what he didn't know - it was what he was unconsciously doing to himself.
+                    </p>
+                    <p>
+                        Through years of research, therapy, and brutal self-examination, Shawn cracked the code on self-sabotage. He developed the exact system that helped him build a seven-figure business, repair his relationships, and finally stop being his own worst enemy.
+                    </p>
+                    <p>
+                        Now he's sharing everything he learned so you don't have to spend years figuring it out the hard way. "Breaking Free" is the book he wished he had when he was stuck in his own self-destructive patterns.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-accent" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Readers Are Saying</h2>
+                <p class="section-subtitle">
+                    Real people. Real transformations. Real results.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "I've read dozens of self-help books, but this one actually changed my behavior. Shawn's approach is raw, honest, and incredibly practical. I finally understand why I was sabotaging my relationships and career."
+                    </p>
+                    <div class="testimonial-author">Sarah M.</div>
+                    <div class="testimonial-role">Marketing Director</div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "The 'Inner Critic Shutdown' technique alone was worth the price of the book. For the first time in years, I can make decisions without second-guessing myself to death. My business has doubled since applying these principles."
+                    </p>
+                    <div class="testimonial-author">Mike Chen</div>
+                    <div class="testimonial-role">Entrepreneur</div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Breaking Free doesn't sugarcoat anything. Shawn calls you out on your BS while giving you the tools to fix it. It's exactly what I needed to hear, even though it was uncomfortable at times."
+                    </p>
+                    <div class="testimonial-author">Jennifer L.</div>
+                    <div class="testimonial-role">Creative Director</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section class="section purchase" id="purchase">
+        <div class="container">
+            <div class="purchase-card">
+                <div class="purchase-content">
+                    <h2 class="purchase-title">Stop Waiting. Start Breaking Free.</h2>
+                    <div class="purchase-price">$40</div>
+                    <ul class="purchase-features">
+                        <li><i class="fas fa-book"></i> Complete "Breaking Free" digital book</li>
+                        <li><i class="fas fa-list-check"></i> 30-day action plan workbook</li>
+                        <li><i class="fas fa-headphones"></i> Bonus audio companion</li>
+                        <li><i class="fas fa-users"></i> Access to private community</li>
+                        <li><i class="fas fa-envelope"></i> Weekly email support series</li>
+                        <li><i class="fas fa-shield-check"></i> 30-day money-back guarantee</li>
+                    </ul>
+                    <a href="https://ko-fi.com/s/901892076f" class="purchase-cta" target="_blank">
+                        <i class="fas fa-credit-card"></i> Get Breaking Free Now
+                    </a>
+                    <div class="purchase-guarantee">
+                        <h4><i class="fas fa-shield-alt"></i> 100% Risk-Free Guarantee</h4>
+                        <p>If you don't see real changes in your self-sabotage patterns within 30 days, get a full refund. No questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Breaking Free by Shawn Straker. All rights reserved.</p>
+                <p>
+                    <a href="#privacy">Privacy Policy</a> | 
+                    <a href="#terms">Terms of Service</a> | 
+                    <a href="mailto:support@breakingfree.com">Contact Support</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Progress Bar Animation
+        function updateProgressBar() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('progressBar').style.width = scrollPercent + '%';
+        }
+
+        // Navbar Scroll Effect
+        function handleNavbarScroll() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Email Form Submission (OmniSend Integration)
+        async function handleEmailSubmit(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('emailInput').value;
+            const submitButton = event.target.querySelector('.form-submit');
+            const originalText = submitButton.innerHTML;
+            
+            // Show loading state
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitButton.disabled = true;
+            
+            try {
+                // OmniSend API Integration
+                const response = await fetch('https://api.omnisend.com/v3/contacts', {
+                    method: 'POST',
+                    headers: {
+                        'X-API-KEY': '68cb7de74a5b0d7aa7f517-1Mzk9FGFaQxN1nDPr7mK9MjObrELrBO9YbLn2Aq7GBmXG6zG8J',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        firstName: '',
+                        lastName: '',
+                        tags: ['breaking-free-lead', 'free-chapter'],
+                        customProperties: {
+                            source: 'breaking-free-website',
+                            signup_date: new Date().toISOString(),
+                            interest: 'free-chapter'
+                        }
+                    })
+                });
+                
+                if (response.ok) {
+                    // Success
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Success! Check Your Email';
+                    submitButton.style.background = 'var(--color-green)';
+                    document.getElementById('emailInput').value = '';
+                    
+                    // Track conversion
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'lead_generation', {
+                            event_category: 'engagement',
+                            event_label: 'free_chapter_signup'
+                        });
+                    }
+                    
+                    // Reset after 3 seconds
+                    setTimeout(() => {
+                        submitButton.innerHTML = originalText;
+                        submitButton.style.background = '';
+                        submitButton.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Subscription failed');
+                }
+            } catch (error) {
+                console.error('Email submission error:', error);
+                submitButton.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Please Try Again';
+                submitButton.style.background = 'var(--color-red)';
+                
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    submitButton.innerHTML = originalText;
+                    submitButton.style.background = '';
+                    submitButton.disabled = false;
+                }, 3000);
+            }
+        }
+
+        // Smooth Scrolling for Navigation Links
+        function setupSmoothScrolling() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Ko-fi Purchase Tracking
+        function trackKofiClick(element) {
+            // Track purchase intent
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'purchase_intent', {
+                    event_category: 'ecommerce',
+                    event_label: 'kofi_redirect',
+                    value: 40
+                });
+            }
+            
+            // Track Facebook Pixel if available
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', {
+                    content_name: 'Breaking Free Book',
+                    content_category: 'Book',
+                    value: 40,
+                    currency: 'USD'
+                });
+            }
+        }
+
+        // Initialize Event Listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll events
+            window.addEventListener('scroll', updateProgressBar);
+            window.addEventListener('scroll', handleNavbarScroll);
+            
+            // Email form
+            const emailForm = document.getElementById('emailForm');
+            if (emailForm) {
+                emailForm.addEventListener('submit', handleEmailSubmit);
+            }
+            
+            // Smooth scrolling
+            setupSmoothScrolling();
+            
+            // Ko-fi link tracking
+            const kofiLinks = document.querySelectorAll('a[href*="ko-fi.com"]');
+            kofiLinks.forEach(link => {
+                link.addEventListener('click', () => trackKofiClick(link));
+            });
+            
+            // Mobile navigation toggle
+            const navToggle = document.getElementById('navToggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+                });
+            }
+        });
+
+        // Intersection Observer for Animation Triggers
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.problem-card, .testimonial, .solution-content');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+
+        // Performance optimization: Debounce scroll events
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Apply debouncing to scroll events
+        window.addEventListener('scroll', debounce(() => {
+            updateProgressBar();
+            handleNavbarScroll();
+        }, 10));
+    </script>
+</body>
+</html>
